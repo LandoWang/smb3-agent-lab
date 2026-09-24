@@ -1,0 +1,182 @@
+{
+  "run_id": "20260924T193307Z-smb3-mariodqn-random-stage-5b8bf081",
+  "parent_commit": "ea6adb6e194e093ead6fd29b4ea768705609129f",
+  "seed": 1,
+  "device": "cpu",
+  "training": false,
+  "model": "ToadAIStation/MarioDQN/pretrained_model/agent_model_5100000",
+  "model_sha256": "3232b5a6bc4adf61c6bb7a89d9c1dc74891cbe27f9eb1f938ec4f9d9ad38a144",
+  "upstream_source_sha256": "99d3b03e35d32ccfb83243acdc3145ac41d7edea9672a0356dbbf7377785943f",
+  "runner_sha256": "bf9259b519cd4008a498df441298f5587afba09d8a82b52f1fe40b4a01a91a59",
+  "rom_sha256": "4377a7f5e6eb50bdd2ac6f249bf1a7085500aca8eb41f38545c3a2731c51a579",
+  "policy_observation": "4x84x84 grayscale pixels only",
+  "reward_and_termination": "read-only RAM assisted; upstream signals plus explicit safety limits",
+  "initial": {
+    "x": 24,
+    "y": 384,
+    "dying_f1": 0,
+    "goal_d6": 0,
+    "far_23": 16,
+    "lives_736": 3,
+    "in_air_d8": 0,
+    "suit_ed": 3
+  },
+  "game": "SuperMarioBros3-Nes-v0",
+  "default_state": "1Player.World1.Level3.state",
+  "buttons": [
+    "B",
+    null,
+    "SELECT",
+    "START",
+    "UP",
+    "DOWN",
+    "LEFT",
+    "RIGHT",
+    "A"
+  ],
+  "candidates": [
+    {
+      "id": 0,
+      "name": "run_jump_right",
+      "buttons": [
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        1
+      ],
+      "frames": 4
+    },
+    {
+      "id": 1,
+      "name": "jump",
+      "buttons": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1
+      ],
+      "frames": 4
+    },
+    {
+      "id": 2,
+      "name": "run_right",
+      "buttons": [
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0
+      ],
+      "frames": 4
+    },
+    {
+      "id": 3,
+      "name": "walk_right",
+      "buttons": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0
+      ],
+      "frames": 4
+    },
+    {
+      "id": 4,
+      "name": "walk_left",
+      "buttons": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0
+      ],
+      "frames": 4
+    },
+    {
+      "id": 5,
+      "name": "jump_right",
+      "buttons": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        1
+      ],
+      "frames": 4
+    },
+    {
+      "id": 6,
+      "name": "idle",
+      "buttons": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "frames": 4
+    }
+  ],
+  "fps": 60.0,
+  "noisy_network": "train mode and reset_noise before each decision, matching upstream playback",
+  "limits": {
+    "wall_seconds": 600,
+    "game_frames": 18000,
+    "deaths": 1,
+    "episodes": 1
+  },
+  "cost": {
+    "cloud_model_requests": 0,
+    "cloud_model_usd": 0,
+    "vm_usd": null
+  },
+  "versions": {
+    "torch": "2.7.1+cpu",
+    "numpy": "2.2.6",
+    "stable-retro": "1.0.1",
+    "gymnasium": "1.3.0",
+    "opencv-python-headless": "4.11.0.86"
+  },
+  "initial_state_sha256": "867241d5dc751af3a428d6c0083d769187e96dd65dc2cabcb02042919ceb5c66",
+  "emulator_core": {
+    "system": "Nes",
+    "sha256": "b60f93804e63d421b838b900458e086ca2f26a22d2a4ddb157f0c13a21086724"
+  },
+  "publication": {
+    "kind": "allowlisted historical metadata export",
+    "original_manifest_sha256": "4ad0dc3f2832d12d35921aacfb9057732d22c7343ced15c06c7ec7cec6d3ce83",
+    "originals_unchanged": true,
+    "state_binaries_and_model_inputs_distributed": false
+  }
+}

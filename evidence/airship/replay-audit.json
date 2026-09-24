@@ -1,0 +1,8 @@
+{
+  "run_id": "20260924T195051Z-smb3-mariodqn-two-stages-4a33a2b9",
+  "replayed_frames": 940,
+  "all_pixels_and_ram_match": true,
+  "event_chain_valid": true,
+  "model_calls": 0,
+  "classification": "recorded-input audit, not another policy episode"
+}

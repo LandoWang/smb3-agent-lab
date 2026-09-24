@@ -1,0 +1,40 @@
+{
+  "run_id": "20260924T194952Z-smb3-mariodqn-two-stages-cbf949c9",
+  "stop_reason": "upstream_stagnation",
+  "game_frames": 303,
+  "decisions": 76,
+  "video_frames": 304,
+  "game_seconds": 5.05,
+  "wall_seconds": 1.1779890060133766,
+  "max_x": 194,
+  "progress_pixels": 170,
+  "initial": {
+    "x": 24,
+    "y": 368,
+    "dying_f1": 0,
+    "goal_d6": 0,
+    "far_23": 16,
+    "lives_736": 6,
+    "in_air_d8": 0,
+    "suit_ed": 3
+  },
+  "final": {
+    "x": 194,
+    "y": 352,
+    "dying_f1": 0,
+    "goal_d6": 0,
+    "far_23": 20,
+    "lives_736": 6,
+    "in_air_d8": 0,
+    "suit_ed": 3
+  },
+  "deaths": 0,
+  "reward": 0.9424999999999998,
+  "video_encoder_exit": 0,
+  "median_inference_ms": 2.2735580132575706,
+  "p95_inference_ms": 5.790835253719706,
+  "last_event_sha256": "1d2c2a1e0f34a1a6f3bdd7c90e27a80459b8ac3d1adbfef259654f05925640ce",
+  "cloud_model_requests": 0,
+  "cloud_model_usd": 0,
+  "result_scope": "single seeded episode, not a success-rate estimate; upstream goal signal requires visual confirmation"
+}

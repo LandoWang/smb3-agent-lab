@@ -1,0 +1,40 @@
+{
+  "run_id": "20260924T192800Z-smb3-mariodqn-pretrained-27330864",
+  "stop_reason": "upstream_goal_signal",
+  "game_frames": 1147,
+  "decisions": 287,
+  "video_frames": 1148,
+  "game_seconds": 19.116666666666667,
+  "wall_seconds": 4.968291700992268,
+  "max_x": 2682,
+  "progress_pixels": 2658,
+  "initial": {
+    "x": 24,
+    "y": 384,
+    "dying_f1": 0,
+    "goal_d6": 0,
+    "far_23": 16,
+    "lives_736": 4,
+    "in_air_d8": 0,
+    "suit_ed": 0
+  },
+  "final": {
+    "x": 2682,
+    "y": 323,
+    "dying_f1": 0,
+    "goal_d6": 216,
+    "far_23": 175,
+    "lives_736": 4,
+    "in_air_d8": 1,
+    "suit_ed": 0
+  },
+  "deaths": 0,
+  "reward": 28.712499999999974,
+  "video_encoder_exit": 0,
+  "median_inference_ms": 2.223004004918039,
+  "p95_inference_ms": 3.125694804475641,
+  "last_event_sha256": "0be358648f0ab427f08d9f7bf5f13d95871b0607415ab5267d9613cd630dbb1e",
+  "cloud_model_requests": 0,
+  "cloud_model_usd": 0,
+  "result_scope": "single seeded episode, not a success-rate estimate; upstream goal signal requires visual confirmation"
+}
