@@ -21,3 +21,8 @@ states/
 *.safetensors
 *.npz
 *.tar.gz
+*.zip
+adapter/sessions/
+adapter/runtime/
+adapter/test-tmp/
+adapter/validation/

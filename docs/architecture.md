@@ -14,6 +14,11 @@ The planner cannot create capabilities by naming them in a prompt. A plan node n
 
 ## Components
 
+The [public session adapter](../adapter/README.md) now implements the frame/plan/
+decision loop, intent queue, declared motor recipes, audit and viewer. Its remote
+Profile client is game-neutral; game-specific memory and model serving remain
+separate dependencies. It has no learned dynamics or validated landing predictor.
+
 | Component | Responsibility | Must not be confused with |
 |---|---|---|
 | NES emulator | Deterministic game state and input execution | A model inventing game dynamics |
@@ -53,4 +58,4 @@ This wrapper does not require retraining. However, an API such as land_on(platfo
 - Full-game completion or broad cross-level generalization.
 - A universal Markov state reconstructed from a few RAM bytes.
 - Calibrated survival probabilities from Q values or model preference scores.
-- A portable cloud/local language-model service deployment in this initial preview.
+- Bundled cloud/local model serving or a one-command emulator/model deployment.

@@ -1,0 +1,13 @@
+{
+  "seed": 20260924,
+  "profile": {"kind": "remote", "endpoint_env": "MARIO_ADAPTER_EMULATOR_URL"},
+  "brain": {"kind": "codex", "model": "REPLACE_WITH_YOUR_CODEX_MODEL"},
+  "controller": {
+    "kind": "local_diffusiongemma", "model": "dgemma",
+    "endpoint_env": "MARIO_ADAPTER_LOCAL_DECISIONS_URL", "token_endpoint_env": "MARIO_ADAPTER_TOKENIZER_URL"
+  },
+  "schedule": {
+    "brain_min_frames": 60, "brain_every_frames": 60, "decision_every_frames": 24,
+    "request_timeout_s": 120, "max_frames": 600, "max_decisions": 100, "max_wall_s": 600
+  }
+}

@@ -2,6 +2,8 @@
 
 This document concerns packaging/runtime validation, not another gameplay benchmark.
 
+For the subsequent public session adapter, see [adapter validation](adapter-validation.md).
+
 - Eight standard-library tests: all historical evidence records, valid prefix, action tampering, omitted frames, trajectory action tampering, summary tampering, endpoint tampering, runner syntax.
 - Offline verification covers four historical policy runs, 765 decisions and 3058 frames.
 - Release guard checks for forbidden artifacts, credential patterns, private home-directory paths, broken local Markdown links, and media checksums. It is heuristic, not a guarantee against all possible secrets.

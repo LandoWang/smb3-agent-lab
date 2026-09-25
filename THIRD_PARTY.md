@@ -30,6 +30,18 @@ The adapter loads only four reviewed architecture/action definitions from the se
 
 Astra, TypeSafe Jev through OpenRouter, local DiffusionGemma, and published CLM are separately identified experimental backends. Their names do not imply affiliation, endorsement, or bundled access. This preview contains no provider credentials, model weights, copied provider implementations, or promise of API availability.
 
+## Public session adapter (September 25)
+
+The adapter adds original client/protocol code, not model weights or provider
+server implementations. Live Codex requires separately installed, authenticated
+software; Jev requires OpenRouter access; local DiffusionGemma requires its own
+compatible deployment. The [Google model](https://huggingface.co/google/diffusiongemma-26B-A4B-it)
+and [djev frontend](https://github.com/mmastrac/djev) are references, not redistributed software.
+
+The public motor catalog is hand-authored button metadata, not ROM content or
+a learned physics model. ROM-specific memory decoders, enemy object tables,
+memory-modification code, raw game Sessions and save states are excluded.
+
 ## Reverse-engineering references
 
 [Community SMB3 disassembly](https://github.com/captainsouthbird/smb3/tree/09b1bd81a788de8ceec664a34094e84ddb463117) informed interpretation. This is community reverse engineering, not Nintendo-published original source. We link to it and summarize findings; no disassembly files or ROM data are included.

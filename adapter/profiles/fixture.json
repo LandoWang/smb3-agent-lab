@@ -1,0 +1,7 @@
+{
+  "seed": 20260924,
+  "profile": {"kind": "fixture", "options": {"goal": 96, "hazard_at": 40}},
+  "brain": {"kind": "scripted_fixture"},
+  "controller": {"kind": "scripted_fixture"},
+  "schedule": {"brain_min_frames":60, "brain_every_frames": 120, "decision_every_frames": 24, "request_timeout_s": 5, "max_frames": 120, "max_decisions": 20}
+}

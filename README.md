@@ -7,6 +7,8 @@ Experiments in planning, low-latency control, and auditable evaluation in **Supe
 ## Start here
 
 - [中文说明](README.zh-CN.md)
+- [Frame-stepped session adapter: offline demo and model interfaces](adapter/README.md)
+- [Adapter pilots, context limits and pit failure](docs/adapter-results.md)
 - [Recorded results and limitations](docs/results.md)
 - [Architecture and experiment history](docs/architecture.md)
 - [Memory assistance and physics findings](docs/memory-and-physics.md)
@@ -18,11 +20,12 @@ Experiments in planning, low-latency control, and auditable evaluation in **Supe
 
 | Experiment | Evidence | Status |
 |---|---|---|
-| Astra + OpenRouter Jev | Archived, memory-assisted model-control experiments | Historical; provider-specific integration is not shipped in this preview |
+| Astra + OpenRouter Jev | Archived, memory-assisted model-control experiments | Historical; adapter now includes transport code, not bundled services or a fresh Jev result |
 | Astra + local DiffusionGemma | Route plans, action candidates, sampled choices, execution feedback | Historical; local Jev-like controller, **not** OpenRouter Jev |
 | Astra + published CLM | Controller comparison with planner-restricted candidates | Historical; not an independent CLM clearance |
 | Published MarioDQN checkpoint | Four recorded single-episode trials; deterministic input replay | Portable CPU evaluation example included |
 | Jev supervising DQN | Proposed handoff/control architecture | **Not implemented or evaluated** |
+| Session adapter + Codex/local selector | Frame/plan/decision audit, synthetic tests, reported memory-assisted pilots | Public core/client included; game and model services remain external |
 
 ## DQN: one successful course, three stopped transfers
 
@@ -59,6 +62,16 @@ python3 -m unittest discover -s tests -v
 
 For actual gameplay, see [reproduction instructions](docs/reproduce.md). You provide your own legally obtained ROM, and separately obtain any third-party model/source under its applicable terms. Nothing downloads a ROM or silently calls a paid API.
 
+The new [session adapter](adapter/README.md) also runs without a ROM or API key:
+
+```sh
+cd adapter
+python3 -m unittest discover -s tests -v
+python3 -m session_adapter demo --output ../output/adapter-demo
+```
+
+This demo is a **scripted synthetic environment**, not Mario or a model result.
+
 ## Design principles
 
 - **Advance frames → pause → decide.** Model latency affects wall time, not unobserved emulator time.
@@ -71,6 +84,6 @@ For actual gameplay, see [reproduction instructions](docs/reproduce.md). You pro
 
 No ROM, model weights, ROM-derived full maps, emulator save states, cloud credentials, private endpoints, or personal workspace archives are included. Gameplay media contains third-party game imagery; it is not licensed as our original artwork. See [THIRD_PARTY.md](THIRD_PARTY.md).
 
-The preview packages DQN evaluation and evidence first. The historical Astra/Jev/CLM services remain documented experiments, not a claim of a portable one-command integration.
+The preview includes DQN evaluation/evidence and a portable session-adapter core. Game harnesses, emulator services and model serving remain separately provisioned; this is not a one-command full-stack deployment. Session debug bundles remain private unless separately reviewed.
 
 Our original code and documentation are MIT-licensed; third-party materials retain their own rights.
